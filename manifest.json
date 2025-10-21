@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Right-Click Gemini Nano",
+  "version": "1.0.0",
+  "description": "AI-powered text processing using Chrome's built-in Gemini Nano model",
+  "permissions": ["contextMenus", "activeTab"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Right-Click Gemini Nano"
+  },
+  "icons": {
+    "16": "icons/icon.svg",
+    "32": "icons/icon.svg",
+    "48": "icons/icon.svg",
+    "128": "icons/icon.svg"
+  }
+}

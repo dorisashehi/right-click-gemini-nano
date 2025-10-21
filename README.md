@@ -65,4 +65,5 @@ If the extension doesn't load:
 2. Ensure `manifest.json` is valid JSON
 3. Check Chrome's extension console for errors
 4. Try reloading the extension in `chrome://extensions/`
+
 # right-click-gemini-nano

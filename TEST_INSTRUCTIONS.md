@@ -20,10 +20,14 @@
 
 ### 3. Verify Background Script
 
-- [ ] Open Chrome DevTools (F12)
-- [ ] Go to Console tab
-- [ ] Look for message: "Right-Click Gemini Nano extension loaded!"
-- [ ] Look for message: "Extension installed successfully"
+- [ ] Go to `chrome://extensions/`
+- [ ] Find "Right-Click Gemini Nano" extension
+- [ ] Click on "Service Worker" link (next to your extension)
+- [ ] This opens DevTools for the background script
+- [ ] Go to Console tab in those DevTools
+- [ ] Look for message: "🚀 Right-Click Gemini Nano extension loaded!"
+- [ ] Look for message: "✅ Extension installed successfully"
+- [ ] Look for timestamp and installation details
 
 ### 4. Test Extension Persistence
 

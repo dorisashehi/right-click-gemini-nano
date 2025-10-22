@@ -8,8 +8,15 @@
     "service_worker": "background.js"
   },
   "action": {
+    "default_popup": "popup.html",
     "default_title": "Right-Click Gemini Nano"
   },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
   "icons": {
     "16": "icons/icon.svg",
     "32": "icons/icon.svg",

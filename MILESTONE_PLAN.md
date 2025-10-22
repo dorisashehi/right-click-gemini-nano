@@ -12,7 +12,7 @@ Build a Chrome Extension that uses Chrome's built-in AI models (Gemini Nano) via
 | **Extension Framework** | Chrome Extensions Manifest V3                                     | Required for Chrome's latest APIs and Gemini Nano integration |
 | **Language**            | TypeScript                                                        | Strong typing + better developer experience for complex logic |
 | **AI APIs**             | Chrome AI APIs (Prompt, Summarizer, Translator, Rewriter, Writer) | Gemini Nano's built-in APIs available via Chrome's AI SDK     |
-| **Packaging & Build**   | Webpack + TypeScript Compiler                                     | Standard build tools for Chrome extensions with React         |
+| **Packaging & Build**   | Vite + TypeScript Compiler                                        | Fast, modern build tools for Chrome extensions with React     |
 | **Styling**             | Tailwind CSS                                                      | Lightweight, modern design for popup/side panel               |
 | **Backend (optional)**  | Node.js + Express                                                 | Only needed for logging, history, or user management          |
 
@@ -42,24 +42,25 @@ Build a Chrome Extension that uses Chrome's built-in AI models (Gemini Nano) via
 
 ### 🎯 **Milestone 2: Project Setup with React + TypeScript**
 
-**Goal:** Set up modern development environment with React, TypeScript, and Webpack
+**Goal:** Set up modern development environment with React, TypeScript, and Vite
 
 **What we build:**
 
 - Initialize npm project with React + TypeScript
-- Configure Webpack for Chrome extension building
+- Configure Vite for fast Chrome extension building
 - Set up Tailwind CSS for styling
 - Create basic React popup component
 - Configure TypeScript compilation
 
 **Verification:**
 
-- `npm run build` creates extension files
+- `npm run build` creates extension files quickly
 - Extension loads with React-based popup
 - Tailwind CSS classes work in popup
 - TypeScript compilation succeeds
+- Fast development with `npm run dev`
 
-**Files created:** `package.json`, `tsconfig.json`, `webpack.config.js`, `tailwind.config.js`, `src/popup.tsx`
+**Files created:** `package.json`, `tsconfig.json`, `vite.config.ts`, `tailwind.config.js`, `src/popup.tsx`, `popup.html`
 **Files modified:** `manifest.json`
 
 ---

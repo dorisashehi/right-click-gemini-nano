@@ -7,10 +7,12 @@ AI-powered text processing using Chrome's built-in Gemini Nano model. Right-clic
 ### Development Installation
 
 1. **Clone or download this repository**
-2. **Open Chrome and go to** `chrome://extensions/`
-3. **Enable "Developer mode"** (toggle in top right)
-4. **Click "Load unpacked"** and select the `right-click-gemini-nano` folder
-5. **Verify installation** - you should see "Right-Click Gemini Nano" in your extensions list
+2. **Install dependencies:** `npm install`
+3. **Build the extension:** `npm run build:full`
+4. **Open Chrome and go to** `chrome://extensions/`
+5. **Enable "Developer mode"** (toggle in top right)
+6. **Click "Load unpacked"** and select the `dist` folder
+7. **Verify installation** - you should see "Right-Click Gemini Nano" in your extensions list
 
 ### Verification Steps
 
@@ -26,25 +28,44 @@ AI-powered text processing using Chrome's built-in Gemini Nano model. Right-clic
 - Simple background service worker
 - Extension icon and branding
 
+**Milestone 2: Project Setup with React + TypeScript** ✅ COMPLETED
+
+- Modern development environment with React + TypeScript + Vite
+- Tailwind CSS for styling
+- React popup component with modern UI
+- Content script integration
+- Fast build system with Vite and npm scripts
+
 ## 🛠️ Technology Stack
 
 - **Frontend/UI**: React.js + TypeScript
 - **Extension Framework**: Chrome Extensions Manifest V3
 - **Language**: TypeScript
 - **AI APIs**: Chrome AI APIs (Prompt, Summarizer, Translator, Rewriter, Writer)
-- **Build Tools**: Webpack + TypeScript Compiler
+- **Build Tools**: Vite + TypeScript Compiler
 - **Styling**: Tailwind CSS
 
 ## 📁 Project Structure
 
 ```
 right-click-gemini-nano/
-├── manifest.json          # Extension configuration
-├── background.js          # Service worker
+├── src/
+│   ├── popup.tsx         # React popup component
+│   ├── content.ts        # Content script
+│   └── index.css         # Tailwind CSS styles
+├── popup.html            # Popup HTML template
+├── dist/                 # Built extension (generated)
+├── manifest.json         # Extension configuration
+├── background.js         # Service worker
+├── package.json          # Dependencies and scripts
+├── vite.config.ts        # Vite build configuration
+├── tailwind.config.js    # Tailwind CSS config
+├── tsconfig.json         # TypeScript config
 ├── icons/
-│   └── icon.svg          # Extension icon
-├── README.md             # This file
-└── MILESTONE_PLAN.md     # Development roadmap
+│   └── icon.svg         # Extension icon
+├── README.md            # This file
+├── MILESTONE_PLAN.md    # Development roadmap
+└── MILESTONE_2_TEST.md  # Testing instructions
 ```
 
 ## 🎯 Next Steps
